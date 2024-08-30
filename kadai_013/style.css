@@ -60,6 +60,11 @@ PC用のスタイル
     color: #0d0d0d;
   }
 }
+button {
+  border: none; /* Ensure no borders */
+  padding: 0; /* Remove default padding */
+  cursor: pointer; /* Show pointer on hover */
+}
 
 /*====================
  スマートフォン用のスタイル
@@ -102,9 +107,11 @@ PC用のスタイル
   }
   /* ×ボタン */
   #close {
+    background-color: #ce933e;
     position: absolute;
     top: 20px;
     right: 20px;
+    border: none;
   }
 
   /*ナビゲーションメニュー用ロゴ  */
@@ -139,16 +146,6 @@ PC用のスタイル
     background-image: url("images/arrow.png");
     background-repeat: no-repeat;
     background-position: right top;
-  }
-
-  #sns {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-  }
-
-  #sns>a {
-    margin-right: 30px;
   }
 }
 @media screen and (min-width: 768px) {
